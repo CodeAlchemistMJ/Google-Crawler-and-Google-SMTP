@@ -29,7 +29,7 @@ def search_and_email(keyword, to_email):
         keyword = keyword + " site:" + site  # Append site restriction to the keyword
 
         # Construct the Google Custom Search API URL
-        google_url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyAuNaxJS6a2RquArC3uwbQCCUWsHI_wfBQ&cx=4197f0cd9d69449da"
+        google_url = "https://www.googleapis.com/customsearch/v1?key=(your API key)&cx=(your search engine ID)"
         google_url = google_url + "&q=" + keyword  # Append the search query to the URL
 
         # Send a network request to Google
